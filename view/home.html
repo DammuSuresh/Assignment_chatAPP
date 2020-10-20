@@ -5,7 +5,7 @@
     </div>
     <div class="col-xs-12">      
             <div class="chatbox-position" id="textbox">
-                    <div ng-repeat="message in arrayList track by $index" ng-class="{'text-right':message.user === 'System','text-left':message.user !== 'System'}" >
+                    <div ng-repeat="message in arrayList track by $index" ng-class="{'text-left':message.user === 'System','text-right':message.user !== 'System'}" >
                        <div  ng-class="{'system-info':message.user === 'System','user-info':message.user !== 'System'}" >{{message.user}}</div>
                         <span class="user-mesg">{{message.message}}</span>
                     </div>
